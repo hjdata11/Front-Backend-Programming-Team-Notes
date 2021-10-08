@@ -1,0 +1,51 @@
+{
+  "name": "instaclone",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "nodemon --exec ./node_modules/.bin/babel-node src/server.js --delay 2",
+    "migrate": "npx prisma migrate dev",
+    "studio": "npx prisma studio",
+    "build": "babel ./node_modules/.bin/babel-node src --out-dir build",
+    "start": "node build/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjdata11/instaclone-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hjdata11/instaclone-backend/issues"
+  },
+  "homepage": "https://github.com/hjdata11/instaclone-backend#readme",
+  "dependencies": {
+    "@prisma/client": "^2.30.3",
+    "apollo-server": "^3.0.2",
+    "apollo-server-express": "^3.1.2",
+    "aws-sdk": "^2.973.0",
+    "bcrypt": "^5.0.1",
+    "core-js": "^3.16.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^15.5.1",
+    "graphql-subscriptions": "^1.2.1",
+    "graphql-tools": "^7.0.2",
+    "graphql-upload": "^12.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "upgrade": "^1.1.0",
+    "webpack": "^5.50.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.14.8",
+    "@babel/node": "^7.14.7",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.14.8",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.12",
+    "prisma": "^2.30.3"
+  }
+}
